@@ -6,7 +6,8 @@ const App = () => {
       <Nav/>
       <h1>Cats4Life</h1>
       <Card />
-  </div>  );
+  </div> 
+  )
 };
 
 export default App;

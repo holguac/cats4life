@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
+ import faker from "faker";
+
 const Card = () => {
     const [images, setImages] = useState([""])
     const fetchImage = async () => {
@@ -8,30 +10,25 @@ const Card = () => {
         setImages(data)
     }
 
+    
     useEffect(() => {
         fetchImage()
     }, [])
+    
     return (
-        <div>
-            <div className="App">
-       {images.map((item,index)=>{
-           return(
-              
-            <img key={index} src={item.url} alt="img"/>
-           
-            
-           )
-           })
-          
-           }   
-        
-       
-
-
-
-
+        <div className="App">
+          {images.map((item, index) => {
+            return (
+              <div>
+                <img key={index} src={item.url} alt="img" />
+                <p>{faker.name.firstName()}</p>
+                <p>{faker.animal.cat()}</p>
+                <p>{faker.commerce.price()}</p>
+                <button> Add to cart</button>
+              </div>
+            );
+          })}
         </div>
-        </div>
-    )
-    }
+      );
+    };
 export default Card;
