@@ -1,0 +1,8 @@
+App {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}

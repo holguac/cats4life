@@ -1,10 +1,11 @@
 import Nav from "./Components/Navbar";
 import Card from "./Components/Card";
+import Basket from "./Components/Basket";
 import ModalCard from "./Modal/ModalCard"
 import ModalBasket from "./Modal/ModalBasket";
 import { useState } from "react";
 import { useEffect } from "react";
-
+import "./App.css"
 
 const App = () => {
   const [images, setImages] = useState([""])
@@ -20,7 +21,7 @@ const App = () => {
 
   return (
     <div>
-      <Nav/>
+      <Nav />
       <h1>Cats4Life</h1>
       <ModalCard />
       <ModalBasket />

@@ -1,6 +1,8 @@
 
 import faker from "faker";
 import ModalCard from "../Modal/ModalCard";
+import "./Cardstyle.css"
+
     
 const Card = ({ images }) => {
 
