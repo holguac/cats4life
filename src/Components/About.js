@@ -1,8 +1,10 @@
 import React from "react";
+// import Navbar from "./Components/Navbar"
 
 const About = () => {
     return(
         <div className="About">
+            {/* <Navbar/> */}
             <h2>Interesting Cat Facts</h2>
             <p>
                 <ul className="catFactList">

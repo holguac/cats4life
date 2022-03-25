@@ -5,6 +5,7 @@ const Main = () => {
     <div className="main">
         <h1>Cats4Lyf</h1>
     <h2>Adopt a furry friend today!</h2>
+  
     </div>
   )
 }

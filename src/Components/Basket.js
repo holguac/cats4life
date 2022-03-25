@@ -51,7 +51,7 @@ const Basket = ({ basketItems, removeFromBasket }) => {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <button onClick={closeModal}>close</button>
+        <button onClick={closeModal}>X</button>
 
         {basketItems.map((item) => (
           <>
@@ -68,7 +68,7 @@ const Basket = ({ basketItems, removeFromBasket }) => {
                   removeFromBasket(item);
                 }}
               >
-                x
+              Remove
               </button>
             </div>
           </>
