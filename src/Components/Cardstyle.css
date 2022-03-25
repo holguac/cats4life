@@ -1,9 +1,17 @@
+
+
+@font-face {
+    font-family: quicksand;
+    src: url(../Fonts/Quicksand-SemiBold.ttf);
+}
 button {
     border: none;
     background-color: #FFFDF7;
+    font-family: QUICKSAND;
 }
 
 .button:hover {
     cursor: grab;
 
 }
+

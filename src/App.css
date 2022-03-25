@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: quicksand;
+    src: url(./Fonts/Quicksand-SemiBold.ttf);
+}
+
 * {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -49,6 +55,7 @@
   button {
     border: none;
     background-color: #FFFDF7;
+    font-family: quicksand;
 }
 
 .button:hover {
