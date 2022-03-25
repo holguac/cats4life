@@ -1,3 +1,57 @@
 * {
-    background-color: azure;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    background-color: antiquewhite;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 150px 0 150px;
+  }
+  
+  .container img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px 0 50px;
+    text-align: center;
+  }
+  
+  .modal-container img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  
+  .modal-container button {
+    width: 50px;
+    margin: auto;
+  }
+  
+  .total {
+    text-align: center;
+  }
+
+  button {
+    border: none;
+    background-color: #FFFDF7;
+}
+
+.button:hover {
+    cursor: grab;
+
 }

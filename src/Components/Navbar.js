@@ -1,27 +1,19 @@
-import React, { useState } from 'react'
-import { FaBars, FaTimes } from "react-icons/fa";
 
-// import './Navbar.css'
+import Basket from "./Basket";
 
-const Navbar = ({handleBasketClick}) => {
-    const [click, setClick] = useState(false)
+const Nav = ({ basketItems, removeFromBasket, image }) => {
+  return (
+    <div className="nav">
+      <h1>Cats4Lyf</h1>
+      <div className="basket">
+        <Basket
+          basketItems={basketItems}
+          removeFromBasket={removeFromBasket}
+          image={image}
+        />
+      </div>
+    </div>
+  );
+};
 
-    const handleClick = () => setClick(!click)
-
-    return (
-        <div className='navbar'>
-           
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                <li className='nav-item'><a href='/'>Home</a></li>
-                <li className='nav-item' onClick={handleBasketClick}><a href='#'>Basket</a></li>
-                <li className='nav-item'><a href='/'>Checkout</a></li>
-            </ul>
-            <div className='hamburger' onClick={handleClick}>
-                {click ? (<FaTimes size={30} style={{ color: '#f8f8f8' }} />) : (<FaBars size={30} style={{ color: '#f8f8f8' }} />)}
-
-            </div>
-        </div>
-    )
-}
-
-export default Navbar
+export default Nav;
