@@ -1,5 +1,7 @@
 import Nav from "./Components/Navbar";
 import Card from "./Components/Card";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
 import { useEffect, useState } from "react";
 import faker from "faker";
 import "./App.css";
@@ -50,11 +52,13 @@ const App = () => {
 
   return (
     <div className="App">
+      
       <Nav
         basketItems={basketItems}
         removeFromBasket={removeFromBasket}
         image={cats.image}
       />
+      <Main />
       <div className="container">
         {cats.map((cat, i) => (
           <Card
@@ -67,6 +71,7 @@ const App = () => {
           />
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };

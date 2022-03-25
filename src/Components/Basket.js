@@ -10,6 +10,7 @@ const customStyles = {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
+  
     transform: "translate(-50%, -50%)",
   },
 };
@@ -40,8 +41,8 @@ const Basket = ({ basketItems, removeFromBasket }) => {
 
   return (
     <div>
-      <div>
-        <button onClick={openModal}><BsBasket/></button>
+      <div className="basket">
+        <button className="icon" onClick={openModal}><BsBasket/></button>
       </div>
       <Modal
         isOpen={modalIsOpen}

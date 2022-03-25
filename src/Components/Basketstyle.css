@@ -4,13 +4,20 @@
     src: url(../Fonts/Quicksand-SemiBold.ttf);
 }
 
-button {
-    border: none;
-    background-color: #FFFDF7;
-    font-family: quicksand;
-}
 
-.button:hover {
+.button:hover { 
     cursor: grab;
 
+}
+.icon{
+    
+    background: none;
+    border: none;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 20px;
+    
+
+    
 }

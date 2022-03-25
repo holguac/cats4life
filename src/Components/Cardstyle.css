@@ -6,12 +6,20 @@
 }
 button {
     border: none;
-    background-color: #FFFDF7;
-    font-family: QUICKSAND;
+    background-color: #BDB4BF;
+    font-family: quicksand;
 }
 
 .button:hover {
     cursor: grab;
 
 }
+
+.app {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+
+
 
